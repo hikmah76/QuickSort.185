@@ -90,5 +90,6 @@ int main() {
 	input();
 	    // dort the array using quick soet
 	q_short(0, n - 1);
-	display
+	display()
+		system("pause");
 }
