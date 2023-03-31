@@ -8,17 +8,14 @@ int mov_count = 0; // number of movement
 int n;
 void input() {
 	while (true) {
-	{
-			cout << "masukkan panjang element array : ";
-			cin >> n;
+		cout << "masukkan panjang element array : ";
+		cin >> n;
 
-			if (n <= 20)
-				break;
-			else
-				cout << "\n masukan panjang array adalah 20" << endl;
-
+		if (n <= 20)
+			break;
+		else
+			cout << "\n masukan panjang array adalah 20" << endl;
 	}
-	
 	
 	cout << "\n-------------------" << endl;
 	cout << "\nEnter array element" << endl;
@@ -37,12 +34,11 @@ void swap(int x, int y) {
 	arr[x] = arr[y];
 	arr[y] = temp;
 }
+
 void q_short(int low, int high) {
-{
 		int pivot, i, j;
 		if (low > high) // langkah 1
 			return;
-
 		// partition the list two parts
 		// one containing element less that or equal to pivot
 		// outher containing element greather than pivot 
@@ -52,15 +48,15 @@ void q_short(int low, int high) {
 
 		while (i <= j)//langkah 10
 		{
-			// search for an element greater than pivot
+			//search for an element greather than pivot
 			while ((arr[i] <= pivot) && (i <= high))//langkah 5
 			{
 				i++;//langkah 6
 				cmp_count++;
 			}
 			cmp_count++;
-			//search for an element less thanor equal to pivot 
-			while ((arr[j] > pivot)
+			//search for an element less thanor equal to pivot
+			while ((arr[j] > pivot) && (j >= low)) //langkah 7
 				j--;//langkah 8
 			cmp_count++;
 		}
