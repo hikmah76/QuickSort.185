@@ -76,4 +76,19 @@ void q_short(int low, int high) {
 
 void display() {
 	cout << "\n-------------------------" << endl;
+	cout << "\n-sorted array" << endl;
 	cout << "\n-------------------------" << endl;
+
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << "\n\nnumber of comparasion: " << cmp_count << endl;
+	cout << "Number of data movemen: " << cmp_count << endl;
+}
+
+int main() {
+	input();
+	    // dort the array using quick soet
+	q_short(0, n - 1);
+	display
+}
