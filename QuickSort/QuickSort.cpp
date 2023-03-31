@@ -7,8 +7,12 @@ int cmp_count = 0; // number of comparasion
 int mov_count = 0; // number of movement
 int n;
 void input() {
-	while (true)
+	while (true) {
 		cout << "masukkan panjang element array : ";
-	cin >> n;
+		cin >> n;
 
-	if (n <= 20)
+		if (n <= 20)
+			break;
+		else
+			cout << "\n masukan panjang array adalah 20" << endl;
+	}
