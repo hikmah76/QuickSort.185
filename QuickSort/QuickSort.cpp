@@ -29,5 +29,20 @@ void input() {
 		cin >> arr[i];
 	}
 }
+// swap the elemet at index x with the element at index y
+void swap(int x, int y)
+{
+	int temp;
+	temp = arr[x];
+	arr[x] arr[x];
+	arr[y] temp[y];
+}
+void q_short(int low, int high)
+{
+	int pivot, i, j;
+	if (low > high) // langkah 1
+		return;
+	
+
 
 
